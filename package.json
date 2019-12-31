@@ -1,6 +1,6 @@
 {
   "name": "el-tab-pane-ext",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "解决element-ui > el-tab-pane与vue@2.6.0不兼容,导致 el-tab-pane 与 el-dialog 组合浏览器卡死的问题。Resolved that element-ui > el-tab-pane was incompatible with vue@2.6.0, resulting in el-tab-pane and el-dialog combined browser stuck problem.",
   "main": "index.js",
   "scripts": {
