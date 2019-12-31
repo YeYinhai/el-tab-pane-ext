@@ -11,7 +11,7 @@ el-tab-pane and el-dialog combined browser stuck problem.
 ```shell
 npm install el-tab-pane-ext -S
 // or
-yarn el-tab-pane-ext -S
+yarn add el-tab-pane-ext -S
 ```
 
 ## Quick Start
