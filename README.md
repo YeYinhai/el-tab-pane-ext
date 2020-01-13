@@ -1,5 +1,5 @@
 解决element-ui > el-tab-pane与vue@2.6.0不兼容,导致 
-el-tab-pane 与 el-dialog 组合浏览器卡死的问题。
+el-tab-pane 与 el-dialog 组合浏览器卡死的问题。[中文说明](https://blog.csdn.net/ye987987/article/details/103780297#comments)
 
 Resolved that element-ui > el-tab-pane was incompatible with vue@2.6.0, resulting in
 el-tab-pane and el-dialog combined browser stuck problem.
@@ -14,7 +14,9 @@ npm install el-tab-pane-ext -s
 yarn add el-tab-pane-ext -s
 ```
 
-## Quick Start
+## Usage
+##### Register components:  
+main.js
 ``` javascript
 import Vue from 'vue'
 import Element from 'element-ui'
@@ -23,7 +25,17 @@ import ElTabPaneExt from 'el-tab-pane-ext'
 Vue.use(Element)
 Vue.use(ElTabPaneExt)
 ```
-
+##### or  
+xxx.vue
+``` javascript
+import ElTabPaneExt from 'el-tab-pane-ext'
+export default {
+  components: {
+    'el-tab-pane-ext': ElTabPaneExt
+  },
+}
+```
+##### Use in template:
 ``` javascript
 <el-tabs v-model="tabs">
   <el-tab-pane-ext label="tab1" name="tab1">
