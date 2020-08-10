@@ -1,9 +1,7 @@
 <template>
-  <div>
     <div class="el-tab-pane" v-if="(!lazy || loaded) || active" v-show="active" role="tabpanel" :aria-hidden="!active" :id="`pane-${paneName}`" :aria-labelledby="`tab-${paneName}`">
       <slot name="content"></slot>
     </div>
-  </div>
 </template>
 <script>
 export default {
